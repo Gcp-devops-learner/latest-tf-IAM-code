@@ -1,0 +1,358 @@
+# Copyright 2021 Google LLC. This software is provided as-is, without warranty or representation for any use or purpose. Your use of it is subject to your agreement with Google.
+
+## Outputs for Custom Role ##
+/*
+output "cloud-security-admin" {
+  description = "cloud-security-admin"
+  value       = module.cloud-security-admin
+}
+
+output "cloud-security-poweruser" {
+  description = "cloud-security-poweruser"
+  value       = module.cloud-security-poweruser
+}
+
+output "infosec-audit" {
+  description = "infosec-audit"
+  value       = module.infosec-audit
+}
+
+output "iam-admin" {
+  description = "iam-admin"
+  value       = module.iam-admin
+}
+
+output "iam-poweruser" {
+  description = "iam-poweruser"
+  value       = module.iam-poweruser
+}
+
+output "network-security-eng-admin" {
+  description = "network-security-eng-admin"
+  value       = module.network-security-eng-admin
+}
+
+output "network-security-eng-poweruser" {
+  description = "network-security-eng-poweruser"
+  value       = module.network-security-eng-poweruser
+}
+
+output "siem-admin" {
+  description = "siem-admin"
+  value       = module.siem-admin
+}
+
+output "siem-poweruser" {
+  description = "siem-poweruser"
+  value       = module.siem-poweruser
+}
+
+output "ir-admin" {
+  description = "ir-admin"
+  value       = module.ir-admin
+}
+
+output "ir-poweruser" {
+  description = "ir-poweruser"
+  value       = module.ir-poweruser
+}
+
+output "crypto-admin" {
+  description = "crypto-admin"
+  value       = module.crypto-admin
+}
+
+output "crypto-poweruser" {
+  description = "crypto-poweruser"
+  value       = module.crypto-poweruser
+}
+
+output "ddi-admin" {
+  description = "ddi-admin"
+  value       = module.ddi-admin
+}
+
+output "ddi-poweruser" {
+  description = "ddi-poweruser"
+  value       = module.ddi-poweruser
+}
+
+output "billing-admin" {
+  description = "billing-admin"
+  value       = module.billing-admin
+}
+
+output "billing-poweruser" {
+  description = "billing-poweruser"
+  value       = module.billing-poweruser
+}
+
+output "network-admin" {
+  description = "network-admin"
+  value       = module.network-admin
+}
+
+output "network-poweruser" {
+  description = "network-poweruser"
+  value       = module.network-poweruser
+}
+
+output "cloudops-admin" {
+  description = "cloudops-admin"
+  value       = module.cloudops-admin
+}
+
+output "cloudops-poweruser" {
+  description = "cloudops-poweruser"
+  value       = module.cloudops-poweruser
+}
+
+output "cicd-poweruser" {
+  description = "cicd-poweruser"
+  value       = module.cicd-poweruser
+}
+
+output "cloudsolutions-poweruser" {
+  description = "cloudsolutions-poweruser"
+  value       = module.cloudsolutions-poweruser
+}
+
+output "cloudqe-poweruser" {
+  description = "cloudqe-poweruser"
+  value       = module.cloudqe-poweruser
+}
+
+output "product-poweruser" {
+  description = "product-poweruser"
+  value       = module.product-poweruser
+}
+
+output "cloudeng-admin" {
+  description = "cloudeng-admin"
+  value       = module.cloudeng-admin
+}
+
+output "cloudeng-powersuer" {
+  description = "cloudeng-powersuer"
+  value       = module.cloudeng-powersuer
+}
+
+output "bigdata-admin" {
+  description = "bigdata-admin"
+  value       = module.bigdata-admin
+}
+
+output "bigdata-developer" {
+  description = "bigdata-developer"
+  value       = module.bigdata-developer
+}
+
+
+
+## Outputs for Custom members Binding ##
+
+output "cloud-security-admin-project-level-binding" {
+  description = "cloud-security-admin-project-level-binding"
+  value       = module.cloud-security-admin-project-level-binding
+}
+
+output "cloud-security-admin-folder-level-binding" {
+  description = "cloud-security-admin-folder-level-binding"
+  value       = module.cloud-security-admin-folder-level-binding
+}
+
+output "cloud-security-poweruser-binding" {
+  description = "cloud-security-poweruser-binding"
+  value       = module.cloud-security-poweruser-binding
+}
+
+output "infosec-audit-binding" {
+  description = "infosec-audit-binding"
+  value       = module.infosec-audit-binding
+}
+
+output "iam-admin-project-level-binding" {
+  description = "iam-admin-project-level-binding"
+  value       = module.iam-admin-project-level-binding
+}
+
+output "iam-admin-folder-level-binding" {
+  description = "iam-admin-folder-level-binding"
+  value       = module.iam-admin-folder-level-binding
+}
+
+output "iam-poweruser-binding" {
+  description = "iam-poweruser-binding"
+  value       = module.iam-poweruser-binding 
+}
+
+output "network-security-eng-admin-project-level-binding" {
+  description = "network-security-eng-admin-project-level-binding"
+  value       = module.network-security-eng-admin-project-level-binding
+}
+
+
+output "network-security-eng-admin-folder-level-binding" {
+  description = "network-security-eng-admin-folder-level-binding"
+  value       = module.network-security-eng-admin-folder-level-binding
+}
+
+output "network-security-eng-poweruser-binding" {
+  description = "network-security-eng-poweruser-binding"
+  value       = module.network-security-eng-poweruser-binding
+}
+
+output "siem-admin-project-level-binding" {
+  description = "siem-admin-project-level-binding"
+  value       = module.siem-admin-project-level-binding
+}
+
+output "siem-admin-folder-level-binding" {
+  description = "siem-admin-folder-level-binding"
+  value       = module.siem-admin-folder-level-binding
+}
+
+output "siem-poweruser-binding" {
+  description = "siem-poweruser-binding"
+  value       = module.siem-poweruser-binding
+}
+
+output "ir-admin-project-level-binding" {
+  description = "ir-admin-project-level-binding"
+  value       = module.ir-admin-project-level-binding
+}
+
+output "ir-admin-folder-level-binding" {
+  description = "ir-admin-project-level-binding"
+  value       = module.ir-admin-folder-level-binding
+}
+
+output "ir-poweruser-binding" {
+  description = "ir-poweruser-binding"
+  value       = module.ir-poweruser-binding
+}
+
+output "crypto-admin-project-level-binding" {
+  description = "crypto-admin-project-level-binding"
+  value       = module.crypto-admin-project-level-binding
+}
+
+output "crypto-admin-folder-level-binding" {
+  description = "crypto-admin-folder-level-binding"
+  value       = module.crypto-admin-folder-level-binding
+}
+
+output "crypto-poweruser" {
+  description = "crypto-poweruser"
+  value       = module.crypto-poweruser
+}
+
+output "ddi-admin-project-level-binding" {
+  description = "ddi-admin-project-level-binding"
+  value       = module.ddi-admin-project-level-binding
+}
+
+output "ddi-admin-folder-level-binding" {
+  description = "ddi-admin-folder-level-binding"
+  value       = module.ddi-admin-folder-level-binding
+}
+
+output "ddi-poweruser-binding" {
+  description = "ddi-poweruser-binding"
+  value       = module.ddi-poweruser-binding
+}
+
+output "billing-admin-project-level-binding" {
+  description = "billing-admin-project-level-binding"
+  value       = module.billing-admin-project-level-binding
+}
+
+output "billing-admin-folder-level-binding" {
+  description = "billing-admin-folder-level-binding"
+  value       = module.billing-admin-folder-level-binding
+}
+
+output "billing-poweruser-binding" {
+  description = "billing-poweruser-binding"
+  value       = module.billing-poweruser-binding
+}
+
+output "network-admin-project-level-binding" {
+  description = "network-admin-project-level-binding"
+  value       = module.network-admin-project-level-binding
+}
+
+output "network-admin-folder-level-binding" {
+  description = "network-admin-folder-level-binding"
+  value       = module.network-admin-folder-level-binding
+}
+
+output "network-poweruser-binding" {
+  description = "network-poweruser-binding"
+  value       = module.network-poweruser-binding
+}
+
+output "cloudsolutions-poweruser-binding" {
+  description = "cloudsolutions-poweruser-binding"
+  value       = module.cloudsolutions-poweruser-binding
+}
+
+output "cloudqe-poweruser-binding" {
+  description = "cloudqe-poweruser-binding"
+  value       = module.cloudqe-poweruser-binding
+}
+
+output "product-poweruser-binding" {
+  description = "product-poweruser-binding"
+  value       = module.product-poweruser-binding
+}
+
+output "cloudeng-admin-binding" {
+  description = "cloudeng-admin-binding"
+  value       = module.cloudeng-admin-binding
+}
+
+output "cloudeng-poweruser-binding" {
+  description = "cloudeng-poweruser-binding"
+  value       = module.cloudeng-poweruser-binding
+}
+
+output "cloudops-admin-project-level-binding" {
+  description = "cloudops-admin-project-level-binding"
+  value       = module.cloudops-admin-project-level-binding
+}
+
+output "cloudops-admin-folder-level-binding" {
+  description = "cloudops-admin-folder-level-binding"
+  value       = module.cloudops-admin-folder-level-binding
+}
+
+output "cloudops-poweruser-binding" {
+  description = "cloudops-poweruser-binding"
+  value       = module.cloudops-poweruser-binding
+}
+
+output "cicd-poweruser-binding" {
+  description = "cicd-poweruser-binding"
+  value       = module.cicd-poweruser-binding
+}
+
+output "bigdata-admin-project-level-binding" {
+  description = "bigdata-admin-project-level-binding"
+  value       = module.bigdata-admin-project-level-binding
+}
+
+output "bigdata-admin-folder-level-binding" {
+  description = "bigdata-admin-folder-level-binding"
+  value       = module.bigdata-admin-folder-level-binding
+}
+
+output "bigdata-developer-project-level-binding" {
+  description = "bigdata-developer-project-level-binding"
+  value       = module.bigdata-developer-project-level-binding
+}
+
+*/
+
+
+
